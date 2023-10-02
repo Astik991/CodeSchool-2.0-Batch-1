@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/amazon-favicon.png"  type="image/x-icon">
+    <title>Amazon | Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <main class="form-signin bg-body-tertiary p-4 col-11 col-md-4 m-auto my-5">
+        <form id="loginUser">
+            <div class="d-flex justify-content-center">
+                <img src="./assets/images/amazon-logo.png" alt="MyTODOapp" width="240" height="180" />
+            </div>
+            <h1 class="h3 text-center mb-5 fw-normal">Login here.</h1>
+            <div class="p-3 mb-2 bg-opacity-10 border rounded d-none" id="serverMessage"></div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="userNameInput" placeholder="Username" />
+                <label for="floatingInput">Email or mobile phone number</label>
+                <div id="userNameInputFeedback" class="invalid-feedback"></div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="userPasswordInput" placeholder="Password" />
+                <label for="floatingPassword">Password</label>
+                <div id="userPasswordInputFeedback" class="invalid-feedback"></div>
+            </div>
+            <button class="btn w-100 py-2 mt-2 credential-navigation-btn" type="submit">
+                Login
+            </button>
+            <p class="text-body-secondary my-2">New user <a href="./register.html">Register here</a></p>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

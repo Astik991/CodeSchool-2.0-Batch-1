@@ -17,20 +17,14 @@ ul li::marker {
 }
 .offcanvas-show {
   margin-left: 220px;
-<<<<<<< HEAD
   /* Width of the offcanvas sidebar */
-=======
->>>>>>> f0e8b3e (upadtes)
 }
 
 .offcanvas {
   width: 250px !important;
   background-color: #1b364d !important;
-<<<<<<< HEAD
 
   /* Set your desired width here */
-=======
->>>>>>> f0e8b3e (upadtes)
 }
 .offcanvas-body {
   width: 100% !important;
@@ -65,31 +59,19 @@ ul li::marker {
 }
 @media (min-width: 992px) {
   .moveLeft {
-<<<<<<< HEAD
     /* transition: transform 0.3s ease; Adjust the duration and easing as needed */
-=======
->>>>>>> f0e8b3e (upadtes)
     margin-left: 16%;
     transition: margin-left 1s ease;
   }
   .moveRight {
-<<<<<<< HEAD
     /* transition: transform 0.3s ease; */
     transition: margin-left 1s ease;
   }
 
-=======
-    transition: margin-left 1s ease;
-  }
->>>>>>> f0e8b3e (upadtes)
   .offcanvas {
     transition: transform 1s !important;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> f0e8b3e (upadtes)
 .navbar-nav a {
   text-decoration: none;
 }
@@ -108,7 +90,6 @@ ul li::marker {
   background-color: #324a5f;
 }
 
-<<<<<<< HEAD
 .navbar-toggler{
   border: none!important;
 }
@@ -119,15 +100,3 @@ ul li::marker {
 .moveRight{
   margin-left: 0%;
 }
-=======
-.navbar-toggler {
-  border: none !important;
-}
-
-.moveLeft {
-  margin-left: 16%;
-}
-.moveRight {
-  margin-left: 0%;
-}
->>>>>>> f0e8b3e (upadtes)

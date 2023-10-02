@@ -1,0 +1,23 @@
+.seats button {
+  background-color: slategrey;
+  color: white;
+}
+
+.book_button {
+  background-color: #f84464;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ticket_heading {
+  color: #1e81b0;
+}
+.ticket_subHeadings {
+  color: #e07b39;
+}
+
+.history_heading {
+  color: #deac0a;
+}

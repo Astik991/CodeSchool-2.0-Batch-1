@@ -1,0 +1,54 @@
+/* Side Menu Bar */
+.offcanvas-start{
+    background-color: #1B354D;
+    width: 300px !important;
+}
+.offcanvas-header{
+    border-bottom: 1px solid #305678;
+}
+.nav-link{
+    color: white;
+    font-size: 14px;
+}
+.nav-link:hover{
+    color: aliceblue;
+    border-left: 3px solid #E5B96A;
+    background-color: #2B4259;
+}
+.nav-link:visited{
+    color: aliceblue;
+    border-left: 3px solid #E5B96A;
+    background-color: #2B4259;
+}
+/* Navbar */
+.navbar{
+    background-image: url('https://d20exy1ygbh3sg.cloudfront.net/fms/images/newUi/header-bg.jpg');
+}
+.navbar p{
+    margin: 0px;
+    font-size: 14px;
+    color: white;
+}
+.wrapper-block p{
+    font-size: 12px !important;
+}
+svg{
+    margin: 4px;
+}
+.container-wrapper{
+    background-color:  #4D6273;
+    height: 44px;
+    border-radius: 5%;
+}
+.dropdown-item{
+    font-size: 14px;
+}
+.dropdown-menu{
+    width: 205px;
+}
+label{
+    font-weight: 500;
+}
+label span{
+    color: red;
+}

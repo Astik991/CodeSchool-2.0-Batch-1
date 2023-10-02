@@ -1,0 +1,45 @@
+/* Form Submit Style for login and register */
+.credential-navigation-btn, .credential-navigation-btn:hover, .credential-navigation-btn:focus {
+    background-color: #FF9900;
+}
+/* Form Input Fields */
+/* Removing default css for input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Navbar */
+.navbar{
+  background-color: #131921;
+}
+.navbar-notification-alert{
+  font-size: 10px;
+}
+/* product card */
+.card-img-top {
+  height: 180px;
+  object-fit: contain;
+}
+/* Text Overflow for product name */
+.title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Cart Quantity */
+.quantity-toggle{
+  border-radius: 50%;
+  margin: 0px 4px;
+  padding: 0px 6px;
+  border: 1px groove #babfc5;
+  background-color: #E9ECEF;
+  width: 30px;
+  height: 30px;
+  
+}
+/* Toasts */
+.toast{
+  background-color:transparent; 
+  width:130px;
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber App</title>
+    <link rel="stylesheet" href="./../Assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav-section">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+            <div class="d-flex menu-section">
+                <a class="navbar-brand text-white" href="#">Uber</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About us</a></li>
+                                <li><a class="dropdown-item" href="#">Our offerings</a></li>
+                                <li><a class="dropdown-item" href="#">How Uber works</a></li>
+                                <li><a class="dropdown-item" href="#">Global citizenship</a></li>
+                                <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                                <li><a class="dropdown-item" href="#">Investor relations</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Safety</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="me-4">
+                <ul class="right-menu d-flex gap-3">
+                    <li class="login"><a class="text-white" href="./login.html">Log in</a></li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sign up
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="p-2" id="register-rider-id"><a class="text-dark"
+                                    href="./rider_register.html">Rider</a></li>
+                            <li class="p-2" id="register-driver-id"><a class="text-dark"
+                                    href="./driver_register.html">Driver</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex flex-column flex-lg-row" style="background-color:#f6f6f6;">
+            <div class="login-section">
+                <h1 style="margin-bottom: 24px;">Create your Uber account</h1>
+                <form id="register-rider-form-submission">
+                    <div>
+                        <label for="register-name-id">Name*</label>
+                        <div class="input-group mb-1">
+                            <input type="text" class="form-control" aria-label="Sizing example input" maxlength="20"
+                                aria-describedby="inputGroup-sizing-default" id="register-name-id">
+                        </div>
+                        <p id="register-name-error" class="text-danger"></p>
+                    </div>
+                    <div>
+                        <label for="register-phone-id">Phone Number*</label>
+                        <div class="input-group mb-1">
+                            <input type="text" class="form-control" aria-label="Sizing example input" maxlength="10"
+                                aria-describedby="inputGroup-sizing-default" id="register-phone-id">
+                        </div>
+                        <p id="register-phone-error" class="text-danger"></p>
+                    </div>
+                    <div>
+                        <label for="register-email-id">Email*</label>
+                        <div class="input-group mb-1">
+                            <input type="email" maxlength="50" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" id="register-email-id">
+                        </div>
+                        <p id="register-email-error" class="text-danger"></p>
+                    </div>
+                    <div class="d-flex justify-content-between gap-4 flex-column flex-lg-row">
+                        <div class="flex-grow-1">
+                            <label for="register-password-id">Password*</label>
+                            <div class="input-group mb-1">
+                                <input type="password" class="form-control" aria-label="Sizing example input"
+                                    maxlength="25" aria-describedby="inputGroup-sizing-default"
+                                    id="register-password-id">
+                            </div>
+                            <p id="register-password-error" class="text-danger"></p>
+                        </div>
+                        <div class="flex-grow-1">
+                            <label for="register-confirm-password-id">Confirm Password*</label>
+                            <div class="input-group mb-1 ">
+                                <input type="password" class="form-control" aria-label="Sizing example input"
+                                    id="register-confirm-password-id" maxlength="25"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <p id="register-confirm-password-error" class="text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <label>Gender*</label>
+                        <div class="d-flex gap-3 mb-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" value="Male"
+                                    id="register-rider-male-id" checked>
+                                <label class="form-check-label" for="register-rider-male-id">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" value="Female"
+                                    id="register-rider-female-id">
+                                <label class="form-check-label" for="register-rider-female-id">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" value="Other"
+                                    id="register-rider-other-id">
+                                <label class="form-check-label" for="register-rider-other-id">
+                                    other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12 col-md-6 mb-2">Register</button>
+                    <p id="register-rider-form-error" class="text-danger"></p>
+                </form>
+            </div>
+            <div class="text-center flex-grow-1">
+                <img src="./../uber_image.jpg" style="width: 100%;" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="./../Assets/register.js"></script>
+
+</html>

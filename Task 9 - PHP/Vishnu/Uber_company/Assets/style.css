@@ -1,0 +1,117 @@
+.nav-section nav{
+    background-color: black;
+}
+
+#navbarSupportedContent ul li a{
+    color: white;
+}
+#navbarSupportedContent ul li{
+    margin-left: 17px;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none !important;
+}
+
+.dropdown-menu li{
+    margin-left: 0px !important;
+}
+
+*{
+    box-sizing: border-box;
+}
+.dropdown-menu li a{
+    color: black !important;
+}
+.right-menu{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* border: 1px solid red; */
+}
+.login{
+    padding: 4px 9px 4px 9px;
+    border-radius: 15px;
+}
+.login:hover{
+    background-color: rgb(54, 53, 53);
+    cursor: pointer !important;
+}
+.menu-section{
+    margin-left: 6%;
+}
+#navbarSupportedContent ul li:hover{
+    background-color: rgb(54, 53, 53);
+    cursor: pointer !important;
+}
+.login-section h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+}
+.login-section{
+    padding-left: 54px;
+    padding-top: 34px;
+}
+#register-vehicle-number-id{
+    text-transform: uppercase;
+}
+#data-table th,
+#data-table td {
+    padding: 10px; 
+    background-color: lightblue;
+}
+
+#data-table th{
+    background-color:black;
+    color: white;
+}
+
+.address {
+    padding: 5px;
+
+}
+
+.address h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dropdown-menu li{
+    border-radius:0px;
+}
+
+.dropdown-menu li:hover{
+    background-color: #f5f5f0 !important;
+}
+
+.dropdown-menu{
+    min-width:100% !important;
+}
+.dropdown button{
+    border-radius: 26px;
+}
+
+@media screen and (max-width:1024px) {
+    .login-section{
+        padding: 10px;
+    }   
+}

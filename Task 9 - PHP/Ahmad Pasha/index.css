@@ -1,0 +1,19 @@
+.delete_button {
+  background-color: #f84464;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.historyBtn {
+  background-color: #a853a5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.register {
+  border-radius: 1px 50px 1px 50px !important;
+}

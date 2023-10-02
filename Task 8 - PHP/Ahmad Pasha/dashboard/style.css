@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-image: url("https://d20exy1ygbh3sg.cloudfront.net/fms/images/newUi/header-bg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+#navBg {
+  background-color: #1b364d;
+  border-bottom: 1px solid white;
+}
+
+#navBg a {
+  color: white;
+  background-color: transparent;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+}
+
+.navbar-nav li {
+  padding: 10px;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.navbar-nav li:hover {
+  border-left: 4px solid #e5b96a;
+  background-color: #324a5f;
+}
+
+.navbar-nav li a {
+  background-color: #324a5f;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.btn_color {
+  background-color: #3f5162;
+  color: #f3faff;
+  border: none;
+}
+
+#logout {
+  width: 95px;
+}
+
+
+
+.right_section {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.left_section {
+  height: 100vh;
+}
+
+#upload_items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file_name {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.delete_button {
+  color: red;
+  cursor: pointer;
+}
+
+#dropDownList {
+  margin-left: -150px;
+}
+
+@media screen and (width >=800px) {
+  #dropDownList {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (width <= 900px) {
+  .left_section{
+     display: none!important;
+  }
+  
+}
+/* table style */
+table,
+th,
+td {
+  border: 2px solid rgb(193, 193, 193) !important;
+  border-collapse: collapse;
+  color: white;
+  background-color: #3f5162;
+  padding: 15px;
+}

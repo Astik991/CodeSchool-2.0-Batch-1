@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber App</title>
+  <link rel="stylesheet" href="./../Assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="nav-section">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+      <div class="d-flex menu-section">
+        <a class="navbar-brand text-white" href="#">Uber</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Our offerings</a></li>
+                <li><a class="dropdown-item" href="#">How Uber works</a></li>
+                <li><a class="dropdown-item" href="#">Global citizenship</a></li>
+                <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                <li><a class="dropdown-item" href="#">Investor relations</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Safety</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="me-4">
+        <ul class="right-menu d-flex gap-3">
+          <li class="login"><a class="text-white" href="./login.html">Log in</a></li>
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sign up
+            </button>
+            <ul class="dropdown-menu">
+              <li class="p-2"><a class="text-dark" href="./rider_register.html">Rider</a></li>
+              <li class="p-2"><a class="text-dark" href="./driver_register.html">Driver</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="d-flex flex-column flex-lg-row" style="background-color:#f6f6f6;">
+      <div class="login-section">
+        <h1 style="margin-bottom: 24px;">Login to access your account</h1>
+        <form id="login-form-submission">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="login-email" placeholder="Jhon Doe">
+            <label for="login-email">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="login-password" maxlength="22" placeholder="Password">
+            <label for="login-password">Password</label>
+          </div>
+          <div class="mt-2">
+            <div class="d-flex gap-3 mb-2">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="login-type" value=1 id="login-rider-id" checked>
+                <label class="form-check-label" for="login-rider-id">
+                  Rider
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="login-type" value=2 id="login-driver-id">
+                <label class="form-check-label" for="login-driver-id">
+                  Driver
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary col-12 col-md-6 mt-3">Login</button>
+          <p id="login-form-error" class="text-danger"></p>
+        </form>
+      </div>
+      <div class="text-center flex-grow-1">
+        <img src="./../uber_image.jpg" />
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="./../Assets/login.js"></script>
+
+</html>

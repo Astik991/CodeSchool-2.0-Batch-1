@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="seatselection.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #333545;">
+        <div class="container-fluid col-lg-8 p-0 m-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="p-0">
+                    <img src="https://bookmyshow-clone-masaischool.netlify.app/bookmyshow-logo.png" class="col-4"
+                        style="height: 80px; width: 150px;">
+                </div>
+
+                <div>
+                    <button id="logout" class="book_button">LogOut</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-6 m-auto row shadow-lg p-4 mt-5 mb-5 rounded-5">
+        <div class="mt-2 p-0 m-0">
+            <img src="https://d35fo82fjcw0y8.cloudfront.net/2018/06/01005211/Bookmyshow-logo.png"
+                class="h-50 w-50 object-fit-contain m-0 p-0">
+        </div>
+
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="movieName" class="form-label">Movie Name</label>
+            <input type="text" class="form-control" id="movieName" placeholder="ex: Pushpa">
+            <p id="movieNameErr" class="text-danger fw-bold"></p>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter Few Lines About Movie">
+            <p id="descriptionErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="" class="form-label">Duration</label>
+            <input type="text" class="form-control" id="duration" placeholder="ex: 2h 30m">
+            <p id="durationErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="language" class="form-label">Language</label>
+            <select class="form-select" aria-label="Default select example" id="language">
+                <option value="" selected>Select Language</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+            <p id="languageErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="releaseDate" class="form-label">Release Date</label>
+            <input type="date" class="form-control" id="releaseDate">
+            <p id="releaseDateErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-lg-6 col-12">
+            <label for="genre" class="form-label">Genre</label>
+            <select class="form-select" aria-label="Default select example" id="genre">
+                <option value="" selected>Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Romantic">Romantic</option>
+            </select>
+            <p id="genreErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-lg-8 col-12">
+            <label for="cinema_hall_list" class="form-label">Select Theaters</label>
+            <select class="form-select p-4 bg-warning text-white fw-bold fs-5" aria-label="Default select example"
+                id="cinema_hall_list" multiple>
+            </select>
+            <p id="cinemaHallListErr" class="text-danger fw-medium"></p>
+        </div>
+        <div class="mb-3 col-12">
+            <label for="image" class="form-label col-12">Image</label>
+            <input type="file" class="form-control" placeholder="Enter image url" id="image">
+            <p id="imageErr" class="text-danger fw-medium"></p>
+        </div>
+
+        <div class="text-center">
+            <button id="uploadData" class="btn btn-primary text-center">Submit</button>
+        </div>
+    </div>
+
+    <script src="./../assets/js/dashboard/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
+</body>
+</body>
+
+</html>
